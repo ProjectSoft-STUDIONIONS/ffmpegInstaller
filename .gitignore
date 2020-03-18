@@ -1,3 +1,11 @@
 *.zip
+installer/**/*.*
+iss/*.png
+iss/*.svg
+iss/*.jpg
+iss/*.jpeg
+iss/*.webp
+iss/*.ai
+iss/*.psd
 bin/win32/*.exe
 bin/win64/*.exe
