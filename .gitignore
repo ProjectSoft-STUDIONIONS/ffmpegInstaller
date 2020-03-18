@@ -1,1 +1,3 @@
-
+*.zip
+bin/win32/*.exe
+bin/win64/*.exe
