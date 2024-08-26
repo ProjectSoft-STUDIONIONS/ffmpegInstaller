@@ -63,6 +63,7 @@ VersionInfoProductName={#AppName}
 VersionInfoProductVersion={#AppVersion}
 VersionInfoProductTextVersion={#AppName} v{#AppVersion}
 
+ArchitecturesAllowed=x64
 ArchitecturesInstallIn64BitMode=x64
 
 PrivilegesRequired=admin
@@ -78,14 +79,9 @@ rus.AddaPathMessage=Добавьте путь к приложению в системную переменную PATH (реко
 
 [Files]
 Source: iss\ffmpeg.ico; DestDir: {app}; DestName: ffmpeg.ico
-; Place all x64 files here
 Source: bin\win64\ffmpeg.exe; DestDir: {app}; DestName: ffmpeg.exe; Check: Is64BitInstallMode
 Source: bin\win64\ffplay.exe; DestDir: {app}; DestName: ffplay.exe; Check: Is64BitInstallMode
 Source: bin\win64\ffprobe.exe; DestDir: {app}; DestName: ffprobe.exe; Check: Is64BitInstallMode
-; Place all x86 files here, first one should be marked 'solidbreak'
-Source: bin\win32\ffmpeg.exe; DestDir: {app}; DestName: ffmpeg.exe; Check: not Is64BitInstallMode; Flags: solidbreak
-Source: bin\win32\ffplay.exe; DestDir: {app}; DestName: ffplay.exe; Check: not Is64BitInstallMode; Flags: solidbreak
-Source: bin\win32\ffprobe.exe; DestDir: {app}; DestName: ffprobe.exe; Check: not Is64BitInstallMode; Flags: solidbreak
 
 [Tasks]
 Name: add_ffmpeg_path; Description: "{cm:AddaPathMessage}"
