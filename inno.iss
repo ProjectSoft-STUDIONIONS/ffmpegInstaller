@@ -1,5 +1,5 @@
 #define AppName "FFmpeg"
-#define AppVersion "4.2.2"
+#define AppVersion "4.3.1"
 #define GitReleace "https://github.com/ProjectSoft-STUDIONIONS/ffmpegInstaller/releases"
 #define AppCopyright "Copyright © 2020 ffmpeg.org"
 #define AppPublisher "https://ffmpeg.org/"
